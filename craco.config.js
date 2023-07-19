@@ -1,7 +1,5 @@
 const packageName = require('./package.json').name;
 
-console.log('packageName', packageName)
-
 module.exports = {
   // ...
   webpack: {
