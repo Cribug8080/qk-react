@@ -20,7 +20,7 @@ reportWebVitals();
 let curRoot;
 
 export async function bootstrap() {
-  console.log('react app bootstraped');
+  // console.log('react app bootstraped');
 }
 
 export async function mount(props) {
@@ -35,12 +35,12 @@ export async function mount(props) {
 }
 
 export function unmount(props) {
-  console.log('unmount react')
+  // console.log('unmount react')
   curRoot.unmount();
 }
 
 export async function update(props) {
-  console.log('update props', props);
+  // console.log('update props', props);
 }
 
 

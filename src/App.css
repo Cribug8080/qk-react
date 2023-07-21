@@ -2,9 +2,11 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App,.sider, .ant-layout {
+  height: 100%;
+}
+.sider {
+  overflow-y: auto;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -35,4 +37,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.main-wrapper {
+  background-color: rgb(240, 242, 245);
+  padding: 20px;
 }
