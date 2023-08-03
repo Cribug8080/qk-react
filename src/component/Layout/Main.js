@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import { Outlet } from "react-router-dom";
 import { Layout } from 'antd';
-import Home from '../Home/Home';
 import Nav from '../Nav/Index'
+import Loading from '../Loading'
 
 const { Sider, Content } = Layout;
 
@@ -13,7 +13,9 @@ export default function Main() {
         <Nav />
       </Sider>
       <Content className='main-wrapper'>
-        <Outlet />
+        <Suspense fallback={<Loading />}>
+          <Outlet />
+        </Suspense>
       </Content>
     </Layout>
   )

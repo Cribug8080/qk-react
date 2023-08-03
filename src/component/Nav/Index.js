@@ -1,5 +1,7 @@
 import React from 'react';
-import { AppstoreAddOutlined, HomeOutlined } from '@ant-design/icons';
+import {
+  AppstoreAddOutlined, HomeOutlined, RadarChartOutlined, TableOutlined,
+} from '@ant-design/icons';
 import { Menu } from 'antd';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 function getItem(label, key, icon, children, type) {
@@ -14,6 +16,8 @@ function getItem(label, key, icon, children, type) {
 const items = [
   getItem(<Link>HOME</Link>, '/', <HomeOutlined />),
   getItem(<Link>Avator</Link>, '/avator', <AppstoreAddOutlined />),
+  getItem(<Link>Heart</Link>, '/g2/heart', <RadarChartOutlined />),
+  getItem(<Link>Table</Link>, '/s2/table', <TableOutlined />),
 ];
 // const items = [
 //   getItem(<Link to={'/'}>HOME</Link>, '/', <HomeOutlined />),
